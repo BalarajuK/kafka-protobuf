@@ -10,11 +10,11 @@ import static com.kadukuntla.KafkaProtobuf.constants.AppConstants.USER_GROUP;
 @Service
 public class StockConsumer {
 
-    @KafkaListener(topics= AppConstants.STOCK_PRICE, groupId = USER_GROUP)
-    public void stockUpdates(StockPriceOuterClass.StockPrice stockPrice){
-        System.out.println("New record from Kafka");
-        System.out.println("Name:"+stockPrice.getName());
-        System.out.println("Last Reported Price:"+stockPrice.getLastPrice());
-    }
+//    @KafkaListener(topics= AppConstants.STOCK_PRICE, groupId = USER_GROUP)
+//    public void stockUpdates(StockPriceOuterClass.StockPrice stockPrice){
+//        System.out.println("New record from Kafka");
+//        System.out.println("Name:"+stockPrice.getName());
+//        System.out.println("Last Reported Price:"+stockPrice.getLastPrice());
+//    }
 
 }
